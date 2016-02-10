@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaCom-Bold.eot');
+    src: url('../fonts/FuturaCom-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaCom-Bold.woff') format('woff'),
+         url('../fonts/FuturaCom-Bold.ttf') format('truetype'),
+         url('../fonts/FuturaCom-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "cymi-icons";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/cymi-icons.eot?#iefix") format("embedded-opentype"),
+  	   url("../fonts/cymi-icons.woff") format("woff"),
+  	   url("../fonts/cymi-icons.ttf") format("truetype");
+}
+
+html {
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: #C4C2C2 url('../img/grey-background.jpg') no-repeat center top;
+	background-size: cover;
+	text-transform: uppercase;
+	overflow: auto;
+}
+
+body * {
+	font-family: 'Trebuchet MS', 'Futura';
+}
+
+div#page {
+	width: 851px;
+	margin: auto;
+}
+
+.logo {
+	float: left;
+	width: 180px;
+	height: 153px;
+	padding-top: 35px;
+	background: url('../img/blue-background.jpg') repeat;
+	text-align: center;
+}
+
+.logo img {
+	width: 124px;
+	height: 112px;
+}
+
+.pink-box {
+	padding: 14px;
+	background: url('../img/pink-background.gif') repeat;
+	position: relative;
+}
+
+.header {
+	float: right;
+	width: 643px;
+}
+
+.stripes {
+	height: 6px;
+	background: url('../img/stripes.png') repeat-x;
+}
+
+.cymi-icon {
+	font-family: "cymi-icons";
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	text-transform: none;
+	text-rendering: auto;
+	position: absolute;
+	width: auto;
+	height: auto;
+	font-size: 1.25em;
+	color: #091B3B;
+}
+
+.cymi-icon-stitch-x:before {
+	content:"\f14b"
+}
+
+.pink-box .cymi-icon.pre {
+	top: 26px;
+}
+
+.pink-box .cymi-icon.post {
+	bottom: 26px;
+}
+
+.pink-box .cymi-icon.l {
+	left: 14px;
+}
+
+.pink-box .cymi-icon.r {
+	right: 14px;
+}
+
+.header h1 {
+	margin-top: 15px;
+	padding: 12px 30px;
+
+	font-size: 26px;
+	font-weight: normal;
+	font-family: 'Futura';
+	color: #fff;
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 30px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+	font-family: 'Futura';
+	color: #0C184B;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h3#hashtag {
+	font-size: 32px;
+	font-weight: normal;
+	font-family: 'Futura';
+	color: #0C184B;
+	text-align: center;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+label {
+	color: #091b3b;
+	padding: 8px 10px 4px 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+textarea {
+	border: none;
+	padding: 10px;
+	color: #444;
+	font-size: 16px;
+	width: 400px;
+	height: 110px;
+	border-top: 4px solid #ccc;
+}
+
+.left {
+	float: left;
+	width: 50%;
+}
+
+.right {
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.footer {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.footer a {
+	font-size: 26px;
+	font-weight: normal;
+	font-family: 'Futura';
+	color: #fff;
+	text-align: center;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.footer a:hover {
+	color: #FFC9D3;
+}
+
+.download-button {
+	position: relative;
+	top: 85px;
+	padding: 15px 20px 12px 20px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 0.02em;
+	background: #E6244E;
+	color: #fff;
+	border: none;
+}
+
+.download-button:hover {
+	cursor: pointer;
+	background-color: #C1163B;
+}
+
+.download-button img {
+	position: relative;
+	top: 2px;
+	left: -6px;
+}
+
+canvas#cover-photo {
+	width: 851px;
+	height: 315px;
+	margin-top: 4px;
+}
+
+canvas#instagram-photo {
+	width: 1080px;
+	height: 1080px;
+	margin-top: 4px;
+	margin-left: -114px;
+}
