@@ -154,7 +154,21 @@ textarea {
 	font-size: 16px;
 	width: 400px;
 	height: 110px;
-	border-top: 4px solid #ccc;
+}
+
+input[type=text], select {
+	border: none;
+	padding: 10px;
+	color: #444;
+	font-size: 16px;
+	width: 400px;
+	height: 20px;
+}
+
+select {
+	padding: 0;
+	width: 420px;
+	height: 40px;
 }
 
 .left {

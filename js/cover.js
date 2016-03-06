@@ -16,16 +16,16 @@ var previewCoverImage = function() {
 
 		var textbox = {
 			x: 676,
-			y: 36,
+			y: 18,
 			width: 263,
 			height: 60,
 			lineHeight: 20
 		};
 
-		var text = $('#cover-text').val().toUpperCase();
+		var text = 'TEAM\n' + $('#cover-team').val().toUpperCase() + '\nHAS BEEN SELECTED!';
 		wrapText(coverContext, text, textbox.x, textbox.y + textbox.lineHeight - 7, textbox.width, textbox.height, textbox.lineHeight);
     };
-	img.src = 'img/cover.jpg';
+	img.src = 'img/cover/' + $('#cover-city').val() + '.jpg';
 };
 
 // Creates a download link for the result image
@@ -35,5 +35,6 @@ var downloadCoverImage = function() {
     link.download = 'cymi-cover.jpg';
 };
 
-$('#cover-text').keyup(previewCoverImage).change(previewCoverImage);
+$('#cover-team').keyup(previewCoverImage).change(previewCoverImage);
+$('#cover-city').change(previewCoverImage);
 $(document).ready(function() { setTimeout(previewCoverImage, 100); });
