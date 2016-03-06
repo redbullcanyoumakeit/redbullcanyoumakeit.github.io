@@ -15,15 +15,17 @@ var previewCoverImage = function() {
 		coverContext.drawImage(this, 0, 0);
 
 		var textbox = {
-			x: 676,
+			x: 685,
 			y: 18,
 			width: 263,
 			height: 60,
 			lineHeight: 20
 		};
-
-		var text = 'TEAM\n' + $('#cover-team').val().toUpperCase() + '\nHAS BEEN SELECTED!';
+		var text = 'TEAM\n\nHAS BEEN SELECTED!';
 		wrapText(coverContext, text, textbox.x, textbox.y + textbox.lineHeight - 7, textbox.width, textbox.height, textbox.lineHeight);
+
+		var teamName = $('#cover-team').val().toUpperCase();
+		coverContext.fillText(teamName, textbox.x, textbox.y + 33);
     };
 	img.src = 'img/cover/' + $('#cover-city').val() + '.jpg';
 };
