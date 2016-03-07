@@ -18,7 +18,7 @@
 			<i class="cymi-icon cymi-icon-stitch-x l pre"></i>
 			<i class="cymi-icon cymi-icon-stitch-x r pre"></i>
 
-			<h1>Create you own social images <br />to engage your followers <br />and make them vote for you</h1>
+			<h1>Create you own social images <br />to engage your followers</h1>
 
 			<i class="cymi-icon cymi-icon-stitch-x l post"></i>
 			<i class="cymi-icon cymi-icon-stitch-x r post"></i>
@@ -69,13 +69,19 @@
 		<h2>Instagram</h2>
 
 		<div class="left">
-			<label>Enter your custom text</label>
+			<label>Select your starting point city</label>
 			<br />
-			<textarea id="instagram-text" placeholder="(e.g. use the name of your team)"></textarea>
+			<select id="instagram-city">
+				<option value="barcelona">Barcelona</option>
+				<option value="berlin">Berlin</option>
+				<option value="edinburgh">Edinburgh</option>
+				<option value="florence">Florence</option>
+				<option value="prague">Prague</option>
+			</select>
 		</div>
 
 		<div class="right">
-			<a id="download-instagram-link" onclick="downloadInstagramImage()" class="download-button">
+			<a id="download-instagram-link" onclick="downloadInstagramImage()" class="download-button" style="top: 35px">
 				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhElEQVQ4jeWRuQ2AMBAErwCKQIgnpST6IaAEhHgaoQBKcAEuYkgILHOWbVJG2ux2/JyIAnDxxmizKn8UAD0wOLGKwHozvSsogVkphTiAzr9FqmQH2tBTYpINaGIfGJKsQJ26BV+yAFVS2ZEUwPmkyCp7km/l3JNGwGRmdAVTdPtvZhGRGz2b4z5q4d2wAAAAAElFTkSuQmCC"/>
 				Download image
 			</a>

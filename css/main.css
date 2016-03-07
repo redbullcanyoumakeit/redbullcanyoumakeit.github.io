@@ -43,7 +43,7 @@ div#page {
 .logo {
 	float: left;
 	width: 180px;
-	height: 153px;
+	height: 154px;
 	padding-top: 35px;
 	background: url('../img/blue-background.jpg') repeat;
 	text-align: center;
@@ -109,9 +109,9 @@ div#page {
 
 .header h1 {
 	margin-top: 15px;
-	padding: 12px 30px;
+	padding: 27px 30px;
 
-	font-size: 26px;
+	font-size: 28px;
 	font-weight: normal;
 	font-family: 'Futura';
 	color: #fff;
